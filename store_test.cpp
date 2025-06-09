@@ -5,18 +5,16 @@
  * @date 19 Jan 2019
  */
 
+#include <cassert>
+#include <fstream>
 #include <iostream>
 #include <map>
 #include <sstream>
-#include <fstream>
-#include <cassert>
 
 using namespace std;
 
 void testStore1() {
   cout << "Start testStore1" << endl;
-  // Should do something more, but lets just read files
-  // since each implementation will
   string cfile = "testcommands-1.txt";
   stringstream out;
   ifstream fs(cfile);
